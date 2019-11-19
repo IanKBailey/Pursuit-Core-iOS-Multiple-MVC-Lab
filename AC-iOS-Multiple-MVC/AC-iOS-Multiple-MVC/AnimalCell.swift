@@ -22,7 +22,9 @@ class AnimalCell: UITableViewCell {
     }
     
     
-    func ConfigAnimalCell() {
-        
+    func ConfigAnimalCell(for animal: ZooAnimal ) {
+        animalImage.image = UIImage(named: animal.imageNumber.description)
+        animalName.text = animal.name
+        animalOrigin.text = animal.origin
     }
 }
